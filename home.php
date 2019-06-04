@@ -14,7 +14,12 @@
 					<table class="table table-bordered text-center">
 						<thead class="thead-light">
 							<tr>
-								<th scope="col" style="width: 10%"></th>
+								<th scope="col" style="width: 10%">
+									<?php
+										$date = new DateTime(date("d.m.Y"));
+										echo "vko ".$date->format("W");
+									?>
+								</th>
 								<th scope="col" style="width: 18%">Maanantai</th>
 								<th scope="col" style="width: 18%">Tiistai</th>
 								<th scope="col" style="width: 18%">Keskiviikko</th>

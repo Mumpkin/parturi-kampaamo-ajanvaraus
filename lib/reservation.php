@@ -21,6 +21,6 @@
     }
   }else{
     echo "Aika on jo varattu.";
-    header("refresh:2;url=../home.php");
+    header("refresh:2;location:../home.php");
   }
 ?>

@@ -20,7 +20,12 @@
 					<table class="table table-bordered text-center">
 						<thead class="thead-light">
 							<tr>
-								<th scope="col" style="width: 10%"></th>
+								<th scope="col" style="width: 10%">
+									<?php
+										$date = new DateTime(date("d.m.Y"));
+										echo "vko ".$date->format("W");
+									?>
+								</th>
 								<th scope="col" style="width: 18%">Maanantai</th>
 								<th scope="col" style="width: 18%">Tiistai</th>
 								<th scope="col" style="width: 18%">Keskiviikko</th>
@@ -85,7 +90,7 @@
 									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 										<span aria-hidden="true">&times;</span>
 									</button>
-									<form action="lib/reservation.php" method="post">
+									<form action="lib/adminreservation.php" method="post">
 										<div class="form-group">
 											<h3 class="text-center">Varaa aika</h3>
 										</div>
@@ -175,7 +180,7 @@
 										<h3 class="text-center">Poistetaanko<br>kaikki varatut ajat?</h3>
 									</div>
 									<div class="form-group">
-										<a role="button" class="btn btn-danger btn-block" href="lib/removeall.php">Kyllä</a>
+										<a role="button" class="btn btn-danger btn-block" href="lib/adminremoveall.php">Kyllä</a>
 									</div>
 									<div class="form-group">
 										<button type="button" class="btn btn-light btn-block" data-dismiss="modal">Peruuta</button>
