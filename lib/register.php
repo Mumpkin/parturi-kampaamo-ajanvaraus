@@ -13,7 +13,7 @@
 
 		if($connect->query($sql)===true){
 			echo "<div class='error'>Register successful.</div>";
-			header("refresh:2;location:../index.php");
+			header("refresh:2;url=../index.php");
 		}
 		else{
 			echo $connect->error;

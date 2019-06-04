@@ -23,11 +23,11 @@
       }
     }else{
       echo "Aika on jo varattu.";
-      header("refresh:2;location:../admin.php");
+      header("refresh:2;url=../admin.php");
     }
   }
   else{
     echo "Sinulla ei ole oikeutta tähän komentoon.";
-    header("refresh:2;location:../home.php");
+    header("refresh:2;url=../home.php");
   }
 ?>

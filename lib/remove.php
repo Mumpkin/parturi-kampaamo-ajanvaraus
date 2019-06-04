@@ -13,6 +13,6 @@
   }
   else{
     echo "Sinulla ei ole oikeutta poistaa toisten varaamia aikoja.";
-    header("refresh:2;location:../home.php");
+    header("refresh:2;url=../home.php");
   }
 ?>

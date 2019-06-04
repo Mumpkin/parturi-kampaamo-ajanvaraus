@@ -16,13 +16,13 @@
   $userid=$_SESSION["sessionid"];
 
   if(mysqli_num_rows($result)>0 && $userid==1){
-    header("refresh:0;url=../admin.php");
+    header("location:../admin.php");
   }
   elseif(mysqli_num_rows($result)>0){
-    header("refresh:0;url=../home.php");
+    header("location:../home.php");
   }
   else{
     echo"Syöttämäsi sähköposti tai salasana ei ole kelvollinen. Yritä uudelleen.";
-    header("refresh:2;../index.php");
+    header("refresh:2;url=../index.php");
   }
 ?>
